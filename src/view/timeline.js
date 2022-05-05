@@ -10,9 +10,9 @@ import { changeView } from "../view-controler/router.js";
 export default () => {
   const viewTimeLine = `
   <button id="getOut" class="btn-getOut">
-  <img  class="img-getOut" src= "../img/salida.png">
+  <img  class="img-getOut" src= "./img/salida.png">
   </button>
-  <img  class="img-timeline" src= "../img/mamapies.png"> 
+  <img  class="img-timeline" src= "./img/mamapies.png"> 
     <h2 class= 'title-timeline'>¡Escribe tu duda!</h2>    
     <form id= "task-form">
     <input type= "text" placeholder = "¿Cuál es tu pregunta?" class= 'task-title' id="task-title">
@@ -59,15 +59,15 @@ export default () => {
   }</textarea>
     <button class="btn-like-off" > 
     <img class='img-like' data-id="${doc.id}" src=${
-        task.likes.includes(userId) ? "../img/like.png" : "../img/dislike.png"
+        task.likes.includes(userId) ? "../img/like.png" : "./img/dislike.png"
       } > 
     </button>
     <span>${task.likes.length}</span>
    <button class='btn-edit' >
-   <img  class="img-edit" data-id="${doc.id}" src= "../img/editar.png">
+   <img  class="img-edit" data-id="${doc.id}" src= "./img/editar.png">
    </button>
     <button class="btn-delete" >
-    <img  class="img-delete" data-id="${doc.id}" src= "../img/eliminar.png">
+    <img  class="img-delete" data-id="${doc.id}" src= "./img/eliminar.png">
     </button>
    </div>
   `;
