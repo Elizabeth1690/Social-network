@@ -59,7 +59,7 @@ export default () => {
   }</textarea>
     <button class="btn-like-off" > 
     <img class='img-like' data-id="${doc.id}" src=${
-        task.likes.includes(userId) ? "../img/like.png" : "./img/dislike.png"
+        task.likes.includes(userId) ? "./img/like.png" : "./img/dislike.png"
       } > 
     </button>
     <span>${task.likes.length}</span>
